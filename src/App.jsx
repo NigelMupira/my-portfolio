@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
+import Hero   from './sections/Hero'
 
 function App() {
 
-  // Track dark mode state — default to dark theme
+  // Track dark mode state — defaults to dark theme
   const [darkMode, setDarkMode] = useState(true)
 
   // Apply or remove 'dark' class on <html> whenever darkMode changes
@@ -19,9 +20,10 @@ function App() {
   const toggleTheme = () => setDarkMode(prev => !prev)
 
   return (
-    // Main wrapper — bg and text color respond to dark/light mode
+    // Main wrapper — colors transition smoothly on theme toggle
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
+      <Hero />
     </div>
   )
 }
