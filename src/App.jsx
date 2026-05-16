@@ -10,13 +10,13 @@ import Projects  from './sections/Projects'
 import Contact   from './sections/Contact'
 import Terminal  from './pages/Terminal'
 
-// Main portfolio layout — all sections stacked with footer at bottom
+// Main portfolio layout — darkMode passed to Hero for MatrixRain theming
 function Portfolio({ darkMode, toggleTheme }) {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-950
                     dark:text-gray-100 transition-colors duration-300">
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
-      <Hero />
+      <Hero darkMode={darkMode} />
       <About />
       <Skills />
       <Timeline />

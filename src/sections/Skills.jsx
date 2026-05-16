@@ -38,7 +38,7 @@ function SkillBar({ name, level, index }) {
       <div className="h-1.5 w-full rounded-full bg-gray-100 dark:bg-gray-950 overflow-hidden">
         {/* Animated fill */}
         <motion.div
-          className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-indigo-400"
+          className="h-full rounded-full bg-linear-to-r from-indigo-500 to-indigo-400"
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           viewport={{ once: true, amount: 0.5 }}

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowDown, Download } from 'lucide-react'
 import useTypewriter from '../hooks/useTypewriter'
+import MatrixRain from '../components/MatrixRain'
 
 // Roles that cycle through the typewriter effect
 const roles = [
@@ -24,7 +25,7 @@ const itemVariants = {
   show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
 }
 
-function Hero() {
+function Hero({ darkMode }) {
 
   const typedRole = useTypewriter(roles)
 
@@ -47,6 +48,9 @@ function Hero() {
       <div className="bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,transparent_40%,#f3f4f6_100%)]
                       dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,transparent_40%,#030712_100%)]">
       </div>
+
+      {/* Matrix rain — rendered on canvas behind all hero content */}
+      <MatrixRain darkMode={darkMode} /> 
 
       {/* Main content — staggered entrance animation */}
       <motion.div
