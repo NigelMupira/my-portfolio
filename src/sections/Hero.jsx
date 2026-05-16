@@ -125,7 +125,7 @@ function Hero() {
         <motion.div variants={itemVariants} className="flex items-center gap-4 mt-1">
 
         {/* GitHub */}
-        <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer"
+        <a href="https://github.com/NigelMupira" target="_blank" rel="noreferrer"
             className="p-2 rounded-lg text-gray-500 dark:text-gray-400
                         hover:text-indigo-500 dark:hover:text-indigo-400
                         hover:bg-gray-100 dark:hover:bg-gray-800
@@ -145,7 +145,7 @@ function Hero() {
         </a>
 
         {/* LinkedIn */}
-        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer"
+        <a href="https://linkedin.com/in/nigel-mupira" target="_blank" rel="noreferrer"
             className="p-2 rounded-lg text-gray-500 dark:text-gray-400
                         hover:text-indigo-500 dark:hover:text-indigo-400
                         hover:bg-gray-100 dark:hover:bg-gray-800

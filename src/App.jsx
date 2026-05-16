@@ -5,6 +5,7 @@ import About    from './sections/About'
 import Skills   from './sections/Skills'
 import Timeline from './sections/Timeline'
 import Projects from './sections/Projects'
+import Contact  from './sections/Contact'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Skills />
       <Timeline />
       <Projects />
+      <Contact />
     </div>
   )
 }
