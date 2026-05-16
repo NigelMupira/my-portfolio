@@ -3,3 +3,8 @@
 
 /* Enable class-based dark mode — applies dark: variants when .dark is on <html> */
 @variant dark (&:where(.dark, .dark *));
+
+/* Smooth scroll for all anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
