@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
-import Navbar from './components/Navbar'
-import Hero   from './sections/Hero'
-import About  from './sections/About'
+import Navbar  from './components/Navbar'
+import Hero    from './sections/Hero'
+import About   from './sections/About'
+import Skills  from './sections/Skills'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
       <Hero />
       <About />
+      <Skills />
     </div>
   )
 }
