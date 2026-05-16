@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
-import Navbar  from './components/Navbar'
-import Hero    from './sections/Hero'
-import About   from './sections/About'
-import Skills  from './sections/Skills'
+import Navbar   from './components/Navbar'
+import Hero     from './sections/Hero'
+import About    from './sections/About'
+import Skills   from './sections/Skills'
 import Timeline from './sections/Timeline'
+import Projects from './sections/Projects'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <About />
       <Skills />
       <Timeline />
+      <Projects />
     </div>
   )
 }
