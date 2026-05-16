@@ -1,11 +1,29 @@
 import { useState, useEffect } from 'react'
-import Navbar   from './components/Navbar'
-import Hero     from './sections/Hero'
-import About    from './sections/About'
-import Skills   from './sections/Skills'
-import Timeline from './sections/Timeline'
-import Projects from './sections/Projects'
-import Contact  from './sections/Contact'
+import { Routes, Route }       from 'react-router-dom'
+import Navbar    from './components/Navbar'
+import Hero      from './sections/Hero'
+import About     from './sections/About'
+import Skills    from './sections/Skills'
+import Timeline  from './sections/Timeline'
+import Projects  from './sections/Projects'
+import Contact   from './sections/Contact'
+import Terminal  from './pages/Terminal'
+
+// Main portfolio layout — all sections stacked vertically
+function Portfolio({ darkMode, toggleTheme }) {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-950
+                  dark:text-gray-100 transition-colors duration-300">
+      <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
+      <Hero />
+      <About />
+      <Skills />
+      <Timeline />
+      <Projects />
+      <Contact />
+    </div>
+  )
+}
 
 function App() {
 
@@ -25,16 +43,11 @@ function App() {
   const toggleTheme = () => setDarkMode(prev => !prev)
 
   return (
-    // Main wrapper — colors transition smoothly on theme toggle
-    <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
-      <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
-      <Hero />
-      <About />
-      <Skills />
-      <Timeline />
-      <Projects />
-      <Contact />
-    </div>
+    // Routes — '/' loads the portfolio, '/terminal' loads the easter egg
+    <Routes>
+      <Route path="/"         element={<Portfolio darkMode={darkMode} toggleTheme={toggleTheme} />} />
+      <Route path="/terminal" element={<Terminal />} />
+    </Routes>
   )
 }
 

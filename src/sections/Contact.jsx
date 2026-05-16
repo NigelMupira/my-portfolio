@@ -53,7 +53,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 px-6 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      className="py-24 px-6 bg-gray-200 dark:bg-gray-900 transition-colors duration-300">
 
       <div className="max-w-5xl mx-auto">
 

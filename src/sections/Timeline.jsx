@@ -25,7 +25,7 @@ function TimelineEntry({ entry, index }) {
       {/* Dot on the centre line — visible on md and up */}
       <div className="hidden md:flex absolute left-1/2 -translate-x-1/2
                       w-4 h-4 rounded-full border-4
-                      bg-white dark:bg-gray-950
+                      bg-gray-200 dark:bg-gray-900
                       border-indigo-500 z-10" />
 
       {/* Card — alternates left/right column based on index */}

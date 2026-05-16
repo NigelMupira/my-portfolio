@@ -15,17 +15,6 @@ const timeline = [
     type: 'work',
   },
   {
-    id: 2,
-    date: 'Dec 2025',
-    title: 'GDG DevFest 2025 — Organiser',
-    organisation: 'Google Developer Groups, Harare',
-    description:
-      'Helped organise one of Harare\'s biggest developer community events, ' +
-      'bringing together engineers, designers, and tech enthusiasts for a ' +
-      'full day of talks, workshops, and networking.',
-    type: 'event',
-  },
-  {
     id: 3,
     date: 'Jan 2026',
     title: 'ISC2 Certified in Cybersecurity (CC) — Exam Attempt',
@@ -48,8 +37,19 @@ const timeline = [
     type: 'achievement',
   },
   {
+    id: 2,
+    date: 'Oct 2025',
+    title: 'GDG DevFest 2025 — Organiser',
+    organisation: 'Google Developer Groups, Harare',
+    description:
+      'Helped organise one of Harare\'s biggest developer community events, ' +
+      'bringing together engineers, designers, and tech enthusiasts for a ' +
+      'full day of talks, workshops, and networking.',
+    type: 'event',
+  },
+  {
     id: 6,
-    date: '2024',
+    date: '2024 – Present',
     title: 'CTF Practice — VulnHub & TryHackMe',
     organisation: 'Self-directed',
     description:

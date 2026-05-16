@@ -34,7 +34,7 @@ function Hero() {
       id="home"
       className="relative min-h-screen flex flex-col items-center justify-center
                  px-6 pt-24 pb-12 overflow-hidden
-                 bg-white dark:bg-gray-950 transition-colors duration-300">
+                 bg-gray-100 dark:bg-gray-950 transition-colors duration-300">
 
       {/* Background dot grid — purely decorative */}
       <div className="absolute inset-0 pointer-events-none
@@ -44,8 +44,7 @@ function Hero() {
       </div>
 
       {/* Radial gradient overlay — fades dot grid toward edges */}
-      <div className="absolute inset-0 pointer-events-none
-                      bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,transparent_40%,white_100%)]
+      <div className="bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,transparent_40%,#f3f4f6_100%)]
                       dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,transparent_40%,#030712_100%)]">
       </div>
 

@@ -30,7 +30,7 @@ function ProjectCard({ project }) {
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
       className="flex flex-col justify-between p-6 rounded-2xl
-                 bg-white dark:bg-gray-800
+                 bg-gray-100 dark:bg-gray-950
                  border border-gray-200 dark:border-gray-700
                  shadow-sm hover:shadow-md hover:border-indigo-300
                  dark:hover:border-indigo-500
