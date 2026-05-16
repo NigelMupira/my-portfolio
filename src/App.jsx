@@ -3,6 +3,7 @@ import Navbar  from './components/Navbar'
 import Hero    from './sections/Hero'
 import About   from './sections/About'
 import Skills  from './sections/Skills'
+import Timeline from './sections/Timeline'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Timeline />
     </div>
   )
 }
